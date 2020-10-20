@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navigation</title>
+    <link href="https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Bhai+2:wght@500&display=swap" rel="stylesheet">
+    <style>
+        [17:59, 23/06/2020] Saurabh Gautam: *{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color: wheat;
+    font-family: Arial;
+}
+
+.navbar{
+    background: -webkit-linear-gradient(-90deg, #FF4B2B, #FF416C);
+    background: linear-gradient(-90deg, #FF4B2B, #FF416C);
+    color:white;
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    position: relative;
+    opacity: 4;
+}
+
+.logo{
+    margin: 0% 2%;
+    padding: 0% 0%;
+
+}
+
+.logo img{
+
+    height: 6em;
+    padding: 1% 0%;
+}
+
+.navbar ul{
+    display: flex;
+    font-family: 'Baloo Bhai' , cursive;
+    font-size: 32px;
+}
+
+
+.navbar li{
+
+    list-style: none;
+    text-align: center;
+    margin: 2% 1%;
+    padding: 0% 4%;
+}
+.navbar li a{
+    padding: 1% 1%;
+    text-decoration: none;
+    color: white;
+}
+
+.navbar li a:hover{
+    color:black;
+    background-color: white;
+    border-radius: 2px;
+    padding:0%;
+}
+
+.content-table {
+border-collapse: collapse;
+margin: 10% 35%;
+font-size: 0.9em;
+min-width: 400px;
+border-radius: 5px 5px 0 0;
+overflow: hidden;
+box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+background-color: #fdedd6;
+
+}
+
+.content-table thead tr {
+color: #ffffff;
+text-align: left;
+font-weight: bold;
+}
+
+.content-table th,
+.content-table td {
+padding: 2% 4%;
+font-size: 2em;
+}
+
+.content-table tbody tr {
+border-bottom: 1px solid #dddddd;
+}
+
+
+.box{
+    position:absolute;
+    top: 50%;
+    left: 75%;
+    width: 500px;
+    transform: translate(-50%,-50%);
+}
+
+input{
+    position: relative;
+    display: inline-block;
+    font-size: 20px;
+    box-sizing: 20px;
+    transition: .5s;
+}
+
+input[type="text"]
+{
+    background: #fff;
+    width: 200px;
+    height: 50px;
+    border:none;
+    outline: none;
+    cursor: pointer;
+    padding: 0px 50px;
+    border-radius: 25px 0 0 25px;
+}
+
+input[type="submit"]
+{
+    position: relative;
+    left: -9px;
+    border-radius: 0 25px 25px 0;
+    width: 100px;
+    height: 50px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    background: #ffc107;
+    color: #fff;
+}
+
+input[type="submit"]:hover{
+    background: #ff5722;
+}
+
+
+.log{
+    float: right;
+    font-size: 28px;
+    margin: 1% 60%;
+    font-family: 'Baloo Bhai 2' , cursive;
+    margin-left: 270%;
+}
+
+.log a{
+    color:white;
+    text-decoration: none;
+    display: block;
+    border-radius: 4px;
+}
+
+.log a:hover{
+    color:black;
+    background-color: white;
+    border-radius: 2px;
+    padding:0%;
+}
+    </style>
+</head>
+
+
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <img src="download.png" alt="check your network connection">
+            </div>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Notifications</a></li>
+                <!--<li><a href="#">Notifications</a></li> -->
+                <div class="box">
+
+                    <form>
+                        <input type="text" name="" placeholder="Search">
+                        <input type="submit" name="" value="Search">
+                    </form>
+                </div>
+                <div class="log"><a href="#">Logout</a></div>
+            </ul>
+
+        </nav>
+    </header>
+
+
+        <table class="content-table">
+            <tbody>
+                <tr>
+                    <th>SNo.</th>
+                    <th>Name</th>
+                    <th>Address</th>
+                    <th>ContactNo</th>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>Antonio</td>
+                    <td>Venice</td>
+                    <td>99xxxxxxxx</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Shylock</td>
+                    <td>Venice</td>
+                    <td>99xxxxxxxx</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>Portia</td>
+                    <td>Venice</td>
+                    <td>99xxxxxxxx</td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>Gratinio</td>
+                    <td>Venice</td>
+                    <td>99xxxxxxxx</td>
+                </tr>
+                <tr>
+                    <td>5</td>
+                    <td>Bassinio</td>
+                    <td>Venice</td>
+                    <td>99xxxxxxxx</td>
+                </tr>
+                <tr>
+                    <td>6</td>
+                    <td>Raj</td>
+                    <td>Mumbai</td>
+                    <td>99xxxxxxxx</td>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>Rahul</td>
+                    <td>Delhi</td>
+                    <td>99xxxxxxxx</td>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>Virat</td>
+                    <td>Delhi</td>
+                    <td>99xxxxxxxx</td>
+                </tr>
+            </tbody>
+        </table>
+
+
+</body>
+</html>

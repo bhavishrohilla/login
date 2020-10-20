@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Navigation</title>
+    <link rel="stylesheet" href="..\static\css\currentstyle.css">
+    <link href="https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Bhai+2:wght@500&display=swap" rel="stylesheet"> 
+</head>
+
+
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <img src="..\static\img\download.png" alt="check your network connection">
+            </div>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Notifications</a></li>
+                <!--<li><a href="#">Notifications</a></li> --> 
+                <div class="box">
+                    
+                    <form>
+                        <input type="text" name="" placeholder="Search">
+                        <input type="submit" name="" value="Search">
+                    </form>
+                </div>
+                <div class="log"><a href="{% url 'logout' %}">Logout</a></div>
+            </ul>
+            
+        </nav>
+    </header>
+
+   
+        <table class="content-table">
+            <tbody>
+                <tr>
+                    <th>SNo.</th>
+                    <th>Name</th>
+                    <th>Address</th>
+                    <th>ContactNo</th>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>Antonio</td>
+                    <td>Venice</td>
+                    <td>99xxxxxxxx</td>
+                </tr>
+                <tr>
+                    <td>2</td>
+                    <td>Shylock</td>
+                    <td>Venice</td>
+                    <td>99xxxxxxxx</td>
+                </tr>
+                <tr>
+                    <td>3</td>
+                    <td>Portia</td>
+                    <td>Venice</td>
+                    <td>99xxxxxxxx</td>
+                </tr>
+                <tr>
+                    <td>4</td>
+                    <td>Gratinio</td>
+                    <td>Venice</td>
+                    <td>99xxxxxxxx</td>
+                </tr>
+                <tr>
+                    <td>5</td>
+                    <td>Bassinio</td>
+                    <td>Venice</td>
+                    <td>99xxxxxxxx</td>
+                </tr>
+                <tr>
+                    <td>6</td>
+                    <td>Raj</td>
+                    <td>Mumbai</td>
+                    <td>99xxxxxxxx</td>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>Rahul</td>
+                    <td>Delhi</td>
+                    <td>99xxxxxxxx</td>
+                </tr>
+                <tr>
+                    <td>1</td>
+                    <td>Virat</td>
+                    <td>Delhi</td>
+                    <td>99xxxxxxxx</td>
+                </tr>
+            </tbody>
+        </table>
+
+       
+</body>
+</html>

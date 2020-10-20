@@ -1,0 +1,559 @@
+<!DOCTYPE html>
+<!-- saved from url=(0031)http://localhost:8000/teachers/ -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+  
+
+
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+
+  <title>Login Page</title>
+
+  <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport">
+    <meta name="viewport" content="width=device-width">
+    <link rel="stylesheet" href="http://localhost:8000/static/assets1/css/light-bootstrap-dashboard.css">
+    <link rel="stylesheet" href="http://localhost:8000/static/assets1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="http://localhost:8000/static/assets1/css/animate.min.css">
+    <link rel="stylesheet" href="http://localhost:8000/static/assets1/css/demo.css">
+    <link rel="stylesheet" href="http://localhost:8000/static/assets1/css/pe-icon-7-stroke.css">
+    <link rel="apple-touch-icon" href="http://localhost:8000/static/images/vkarma-logo.svg">
+    <link rel="shortcut icon" href="http://localhost:8000/static/images/vkarma-logo.svg">
+    <!-- Bootstrap core CSS     -->
+
+    <style type="text/css">
+    .btn-success {
+    color: #fff;
+    background-color: #009688;
+    border-color: #4cae4c;
+}
+.btn {
+
+    background-color: #673AB7;
+    color: white;
+}
+   .dropdown-menu
+    {
+        min-width: 220px;
+        background-color: #88c2f1;
+    }
+    .modal-backdrop {
+    position: relative;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    z-index: 1040;
+    background-color: #000;
+}
+
+    hr
+    {
+        display: block;
+        height: 1px;
+        border: 0;
+        border-top: 1px solid #000000;
+        margin: 1em 0;
+        padding: 0;
+        color: #000000;
+    }
+
+     #even
+    {
+        background-color: red;
+        color: red;
+    }
+    #odd
+    {
+        background-color: yellow;
+        color: yellow;
+    }
+    table th{
+        font-size: large;
+        color: rgb(82, 82, 82);
+    }
+    .content form{
+        padding: 20px;
+        box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    }
+    label{
+        font-weight: 500;
+        font-size: large;
+        color: rgb(126, 126, 126);
+    }
+    table{
+        border-top: 1px solid #ccc;
+    }
+    .navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
+        /* background-color: #FFFF00; */
+        color: #4f8df0
+    }
+
+    .modal-header h4{
+        color: #4f8df0;
+    }
+
+    .content h1,h2,h3{
+        color:#4f8df0;
+        font-weight: 400;
+        background: #ffffff;
+        /* border-radius:10px; */
+        padding-left: 12px;
+        padding-top: 2px;
+        padding-bottom: 4px;
+        box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    }
+
+    .btn {
+        background-color: white;
+        color: #4f8df0;
+        border-color: #4f8df0;
+    }
+    .btn:hover{
+        background-color: #4f8df0;
+        color: white;
+        border-color: #4f8df0;
+        /* border-color: #f8515f ; */
+    }
+    .nav-links{
+        color: #4f8df0;
+        font-size: 16px;
+        text-decoration: none;
+        padding: 15px;
+    }
+    .nav-links:hover{
+        transition: 0.1s;
+        /* text-decoration: none; */
+        color: #7ba5e9;
+    }
+    table td{
+        font-size: 15px;
+        color:rgb(102, 102, 102)
+    }
+    .card-body{
+    background:#edf5fa}
+
+    </style>
+    <!-- Animation library for notifications   -->
+    <link href="http://localhost:8000/teachers/assets1/css/animate.min.css" rel="stylesheet">
+
+    <!--  Light Bootstrap Table core CSS    -->
+    <link href="http://localhost:8000/teachers/assets1/css/light-bootstrap-dashboard.css?v=1.4.0" rel="stylesheet">
+
+
+    <link href="http://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+    <link href="http://fonts.googleapis.com/css?family=Roboto:400,700,300" rel="stylesheet" type="text/css">
+    <link href="http://localhost:8000/teachers/assets1/css/pe-icon-7-stroke.css" rel="stylesheet">
+
+
+</head>
+<body>
+
+<div class="wrapper">
+
+    <div class="sidebar">
+    <!-- <img class="sidebar" data-color="purple" src="/static/assets1/img/sidebar-5.jpg" alt="Logo"> -->
+    <!--   you can change the color of the sidebar using: data-color="blue | azure | green | orange | red | purple" -->
+
+
+      <div class="sidebar-wrapper" style="background-color: #4f8df0">
+
+            <div class="logo">
+                <a href="http://localhost:8000/"><img src="http://localhost:8000/static/images/footer-logo5.png" width="120"></a>
+            </div>
+
+
+
+                  <ul class="nav nav-mobile-menu">
+                    <ul class="nav navbar-nav navbar-left">
+                        <li class="dropdown">
+                              <a href="http://localhost:8000/teachers/#" class="dropdown-toggle" data-toggle="dropdown">
+                                    <i class="fa fa-globe"></i>
+                                    <b class="caret hidden-sm hidden-xs"></b>
+                                    <span class="notification hidden-sm hidden-xs">2</span>
+                  <p class="hidden-lg hidden-md">
+                    2 Notifications
+                    <b class="caret"></b>
+                  </p>
+                              </a>
+
+                              <span class="dropdown-menu">
+                                <center style="color: white">You have 2 Notifications</center>
+                                <hr>
+                                
+
+                                    <center style="color: black">
+
+                                        <a href="http://localhost:8000/teachers/notifications/">
+
+                                        <div>June 1, 2020</div>
+                                        <span>Lecture - GK</span>
+                                        </a>
+
+                                    </center>
+                                    <hr style="border-color: rgb(10, 130, 209);">
+
+
+                                
+
+                                    <center style="color: black">
+
+                                        <a href="http://localhost:8000/teachers/notifications/">
+
+                                        <div>June 1, 2020</div>
+                                        <span>Meeting</span>
+                                        </a>
+
+                                    </center>
+                                    <hr style="border-color: rgb(10, 130, 209);">
+
+
+                                
+                              </span>
+
+                        </li>
+                    </ul>
+
+
+                    <ul class="nav navbar-nav navbar-right">
+                        <li>
+                            <a href="http://localhost:8000/accounts/logout/">
+                                <p>Log out</p>
+                            </a>
+                        </li>
+                    <li class="separator hidden-lg hidden-md"></li>
+                    </ul>
+                </ul><ul class="nav">
+                 
+                
+                <li>
+                    <a href="http://localhost:8000/teachers/">
+                        <i class="pe-7s-home"></i>
+                        <p>Home</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="http://localhost:8000/teachers/notifications/">
+                        <i class="pe-7s-bell"></i>
+                        <p>My Notifications</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="http://localhost:8000/teachers/notices/">
+                        <i class="pe-7s-note2"></i>
+                        <p>My Notices</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="http://localhost:8000/teachers/profile/">
+                        <i class="pe-7s-medal"></i>
+                        <p>My Profile</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="http://localhost:8000/teachers/lecture/add/">
+                        <i class="pe-7s-video"></i>
+                        <p>Schedule Lecture</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="http://localhost:8000/teachers/lectures/">
+                        <i class="pe-7s-speaker"></i>
+                        <p>Lectures</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="http://localhost:8000/teachers/meetings/add/">
+                        <i class="pe-7s-plus"></i>
+                        <p>New Meeting</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="http://localhost:8000/teachers/meetings/">
+                        <i class="pe-7s-play"></i>
+                        <p>Live Class</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="http://localhost:8000/teachers/lessons/">
+                        <i class="pe-7s-film"></i>
+                        <p>View Lessons</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="http://localhost:8000/teachers/lessons/create/">
+                        <i class="pe-7s-micro"></i>
+                        <p>Create Lesson</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="http://localhost:8000/teachers/homework/add/">
+                        <i class="pe-7s-news-paper"></i>
+                        <p>Add Homework</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="http://localhost:8000/teachers/request/">
+                        <i class="pe-7s-paper-plane"></i>
+                        <p>Requests</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="http://localhost:8000/teachers/attendance/select-batch">
+                        <i class="pe-7s-science"></i>
+                        <p>Add Attendance</p>
+                    </a>
+                </li>
+
+
+                <li>
+                    <a href="http://localhost:8000/teachers/remark/">
+                        <i class="pe-7s-pen"></i>
+                        <p>Remarks</p>
+                    </a>
+                </li>
+                 <li>
+                    <a href="http://localhost:8000/teachers/tests/">
+                        <i class="pe-7s-news-paper"></i>
+                        <p>Tests</p>
+                    </a>
+                </li>
+                <li>
+                    <a class="dropdown-toggle" data-toggle="dropdown" style="cursor: pointer;">
+                        <i class="pe-7s-plug"></i>
+                        <p>Online Tests <span class="caret"></span></p>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li>
+                            <a href="http://localhost:8000/teachers/assignment/View/">
+                                <i class="pe-7s-news-paper"></i>
+                                <p>View Assignment</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://localhost:8000/teachers/assignment/add/">
+                                <i class="pe-7s-news-paper"></i>
+                                <p>Create Assignment</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="http://localhost:8000/teachers/exam/marks/">
+                                <i class="pe-7s-news-paper"></i>
+                                <p>Check Marks</p>
+                            </a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="http://localhost:8000/teachers/timetable/">
+                        <i class="pe-7s-keypad"></i>
+                        <p>Schedule</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="http://localhost:8000/teachers/password-change/">
+                        <i class="pe-7s-look"></i>
+                        <p>Change Password</p>
+                    </a>
+                </li>
+                
+
+            </ul>
+      </div>
+    </div>
+
+    <div class="main-panel">
+    <nav class="navbar navbar-default navbar-fixed">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navigation-example-2">
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+
+                </div>
+                <div class="collapse navbar-collapse">
+                    <ul class="nav navbar-nav navbar-left">
+                        <li class="dropdown">
+                              <a href="http://localhost:8000/teachers/#" class="dropdown-toggle" data-toggle="dropdown">
+                                    <i class="fa fa-globe"></i>
+                                    <b class="caret hidden-sm hidden-xs"></b>
+                                    <span class="notification hidden-sm hidden-xs">2</span>
+                  <p class="hidden-lg hidden-md">
+                    2 Notifications
+                    <b class="caret"></b>
+                  </p>
+                              </a>
+
+                              <span class="dropdown-menu">
+                                <center style="color: white">You have 2 Notifications</center>
+                                <hr>
+                                
+
+                                    <center style="color: black">
+
+                                        <a href="http://localhost:8000/teachers/notifications/">
+
+                                        <div>June 1, 2020</div>
+                                        <span>Lecture - GK</span>
+                                        </a>
+
+                                    </center>
+                                    <hr style="border-color: rgb(10, 130, 209);">
+
+
+                                
+
+                                    <center style="color: black">
+
+                                        <a href="http://localhost:8000/teachers/notifications/">
+
+                                        <div>June 1, 2020</div>
+                                        <span>Meeting</span>
+                                        </a>
+
+                                    </center>
+                                    <hr style="border-color: rgb(10, 130, 209);">
+
+
+                                
+                              </span>
+
+                        </li>
+                    </ul>
+
+
+                    <ul class="nav navbar-nav navbar-right">
+                        <li>
+                            <a href="http://localhost:8000/accounts/logout/">
+                                <p>Log out</p>
+                            </a>
+                        </li>
+                    <li class="separator hidden-lg hidden-md"></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+
+
+
+
+
+
+            <div class="content">
+            <div class="card">
+              <div style="padding: 20px; box-sizing: border-box;" class="card-body">
+                
+
+<style>
+  @media 
+  only screen and (max-width: 760px),
+  (min-device-width: 768px) and (max-device-width: 1024px)  {
+
+    body{
+    text-align: center;
+  }
+
+    /* Force table to not be like tables anymore */
+    table, thead, tbody, th, td, tr { 
+      display: block; 
+    }
+    
+    /* Hide table headers (but not display: none;, for accessibility) */
+    thead tr { 
+      position: absolute;
+      top: -9999px;
+      left: -9999px;
+    }
+    
+    tr { border: 1px solid #ccc; }
+    
+    td { 
+      /* Behave  like a "row" */
+      border: none;
+      border-bottom: 1px solid #eee; 
+      position: relative;
+      padding-left: 50%; 
+    }
+    
+    td:before { 
+      /* Now like a table header */
+      position: absolute;
+      /* Top/left values mimic padding */
+      top: 6px;
+      left: 6px;
+      width: 45%; 
+      padding-right: 10px; 
+      white-space: nowrap;
+    }
+
+    
+  }
+</style>
+
+  <nav aria-label="breadcrumb">
+    <ol class="breadcrumb">
+      <li class="breadcrumb-item active"><a href="http://localhost:8000/">Home</a></li>
+    </ol>
+  </nav>
+  <h2 class="mb-3">Details</h2>
+ <div class="card">
+   <div class="table-responsive">
+    <table class="table mb-0">
+      <thead>
+        <tr>
+          <th>Title</th>
+          <th>Subject</th>
+          <th>Description</th>
+          <th>Deadline</th>
+        </tr>
+      </thead>
+      <tbody>
+        
+            <tr>
+              <td class="bg-light text-center font-italic" colspan="5">You don't have any homeworks.</td>
+            </tr>
+          
+        
+      </tbody>
+    </table>
+</div>
+  </div>
+
+              </div>
+            </div>
+          </div>
+
+
+
+    </div>
+</div>
+
+
+
+
+      <!--   Core JS Files   -->
+    <script src="http://localhost:8000/static/assets1/js/jquery.3.2.1.min.js"></script>
+    <script src="http://localhost:8000/static/assets1/js/bootstrap.min.js"></script>
+
+    <!--  Charts Plugin -->
+    <script src="http://localhost:8000/static/assets1/js/chartist.min.js"></script>
+    <!--  Notifications Plugin    -->
+    <script src="http://localhost:8000/static/assets1/js/bootstrap-notify.js"></script>
+
+    <!--  Google Maps Plugin    -->
+    <!-- <script type="text/javascript" src="https://maps.googleapis.com/maps/api/js?key=YOUR_KEY_HERE"></script> -->
+
+    <!-- Light Bootstrap Table Core javascript and methods for Demo purpose -->
+
+    <script src="http://localhost:8000/static/assets1/js/light-bootstrap-dashboard.js"></script>
+
+    <!-- Light Bootstrap Table DEMO methods, don't include it in your project! -->
+
+    <script src="http://localhost:8000/static/assets1/js/demo.js"></script>
+
+
+
+
+</body></html>
